@@ -39,10 +39,11 @@ namespace AddFeatures
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
     private const string space = " ";
+    private string formMainFileName = "form1.cs";
 
     private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      SaveWindowValue();
+      SaveWindowValues();
       Application.Exit();
     }
 
@@ -251,7 +252,7 @@ namespace AddFeatures
       Left = Settings.Default.WindowLeft < 0 ? 0 : Settings.Default.WindowLeft;
     }
 
-    private void SaveWindowValue()
+    private void SaveWindowValues()
     {
       Settings.Default.WindowHeight = Height;
       Settings.Default.WindowWidth = Width;
@@ -263,7 +264,7 @@ namespace AddFeatures
 
     private void FormMainFormClosing(object sender, FormClosingEventArgs e)
     {
-      SaveWindowValue();
+      SaveWindowValues();
     }
 
     private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
