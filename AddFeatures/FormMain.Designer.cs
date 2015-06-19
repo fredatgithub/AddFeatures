@@ -332,7 +332,7 @@
       // 
       this.buttonAddFeatures.Location = new System.Drawing.Point(51, 446);
       this.buttonAddFeatures.Name = "buttonAddFeatures";
-      this.buttonAddFeatures.Size = new System.Drawing.Size(329, 23);
+      this.buttonAddFeatures.Size = new System.Drawing.Size(329, 36);
       this.buttonAddFeatures.TabIndex = 11;
       this.buttonAddFeatures.Text = "Add selected features to Visual Studio solution";
       this.buttonAddFeatures.UseVisualStyleBackColor = true;
@@ -343,9 +343,7 @@
       this.checkedListBoxMain.Items.AddRange(new object[] {
             "Standard Menus - French English",
             "Splash screen",
-            "Timer",
-            "Progress bar",
-            "Cut, Copy and paste",
+            "Cut, Copy and paste implémentation",
             "Tools - Options",
             "Application Version to title bar",
             "Window size value"});
